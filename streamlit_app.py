@@ -39,10 +39,11 @@ input_container = st.container()
 colored_header(label='', description='', color_name='blue-30')
 response_container = st.container()
 
-# Take the user input
+# User input
+## Function for taking user provided prompt as input
 def get_text():
-  text_input = st.get_text("You: ", "", key = "input")
-  return text_input
+    input_text = st.text_input("You: ", "", key="input")
+    return input_text
 
 ## Applying the user input box
 with input_container:
