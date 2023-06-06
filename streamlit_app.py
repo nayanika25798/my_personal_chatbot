@@ -33,9 +33,24 @@ if "generated" not in st.session_state:
 if "past" not in st.session_state:
   st.session_state["past"] = ["Hi!"]
   
+  
+# creating the containers for input and response
 input_container - st.container()
 colored_header(label='', description='', color_name='blue-30')
 response_container = st.container()
 
+# Take the user input
+def get_text():
+  text_input = st.get_text("You: ", "", key = "input")
+  return text_input
+
+## Applying the user input box
+with input_container():
+  user_input = get_text()
   
+# generate the response
+def generate_response(prompt):
+  chatbot = hugchat.chatbot()
+  response = chatbot.chat(prompt)
+  return response
   
