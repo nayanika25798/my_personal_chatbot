@@ -1,1 +1,6 @@
 streamlit
+streamlit 
+streamlit_chat 
+streamlit_extras 
+hugchat
+pandas
