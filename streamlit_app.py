@@ -35,7 +35,7 @@ if "past" not in st.session_state:
   
   
 # creating the containers for input and response
-input_container - st.container()
+input_container = st.container()
 colored_header(label='', description='', color_name='blue-30')
 response_container = st.container()
 
