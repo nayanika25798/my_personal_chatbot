@@ -30,7 +30,7 @@ with st.sidebar:
 # generated IS THE CHATBOT response, past is the HUMAN response
 if "generated" not in st.session_state:
   st.session_state["generated"] = ["Hi There! How can I help you?"]
- if "past" not in st.session_state:
+if "past" not in st.session_state:
   st.session_state["past"] = ["Hi!"]
   
   
