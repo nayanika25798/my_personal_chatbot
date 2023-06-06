@@ -52,7 +52,7 @@ with input_container:
   
 # generate the response
 def generate_response(prompt):
-  chatbot = hugchat.chatbot()
+  chatbot = hugchat.ChatBot()
   response = chatbot.chat(prompt)
   return response
 
