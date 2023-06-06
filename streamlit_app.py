@@ -45,7 +45,7 @@ def get_text():
   return text_input
 
 ## Applying the user input box
-with input_container():
+with input_container:
   user_input = get_text()
   
 # generate the response
@@ -53,4 +53,16 @@ def generate_response(prompt):
   chatbot = hugchat.chatbot()
   response = chatbot.chat(prompt)
   return response
+
+## Conditional display of AI generated responses as a function of user provided prompts
+with response_container:
+    if user_input:
+        response = generate_response(user_input)
+        st.session_state.past.append(user_input)
+        st.session_state.generated.append(response)
+        
+    if st.session_state['generated']:
+        for i in range(len(st.session_state['generated'])):
+            message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
+            message(st.session_state["generated"][i], key=str(i))
   
