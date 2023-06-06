@@ -5,7 +5,7 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 from hugchat import hugchat
 
 # Settingup the Main Title
-st.title('🎈 My Personal Chatbot <3')
+st.title('My Personal Chatbot <3')
 #setting up the sub title
 st.write('Speak your mind and heart!')
 # Setting up the Side-Bar
@@ -32,5 +32,10 @@ if "generated" not in st.session_state:
   st.session_state["generated"] = ["Hi There! How can I help you?"]
 if "past" not in st.session_state:
   st.session_state["past"] = ["Hi!"]
+  
+input_container - st.container()
+colored_header(label='', description='', color_name='blue-30')
+response_container = st.container()
+
   
   
