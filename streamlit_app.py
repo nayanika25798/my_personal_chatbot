@@ -9,7 +9,7 @@ st.title('🎈 My Personal Chatbot <3')
 # st.write('Hello world!')
 
 #Set the title of the app
-st.set_page_config(page_title = "My Personal Chatbot!")
+# st.set_page_config(page_title = "My Personal Chatbot!")
 
 with st.sidebar:
   #set the sidebar title
