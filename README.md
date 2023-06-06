@@ -1,9 +1,6 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# 📦 My Personal ChatBot 
 
-Description of the app ...
+This is an app that gives you a virtual friend! Open up yoyr mind & speak
 
 ## Demo App
 
