@@ -32,7 +32,7 @@ if "generated" not in st.session_state:
   st.session_state["generated"] = ["Hi There! How can I help you?"]
 if "past" not in st.session_state:
   st.session_state["past"] = ["Hi!"]
-  #
+  
   
   
 # creating the containers for input and response
