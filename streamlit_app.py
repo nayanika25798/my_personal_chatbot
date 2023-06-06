@@ -7,7 +7,7 @@ from hugchat import hugchat
 # Settingup the Main Title
 st.title('🎈 My Personal Chatbot <3')
 #setting up the sub title
-st.write('Speak your mind and heart!")
+st.write('Speak your mind and heart!')
 # Setting up the Side-Bar
 
 with st.sidebar:
@@ -24,5 +24,13 @@ with st.sidebar:
     ''')
   add_vertical_space(5)
   st.write("Made with ❤️ by Nayanika (<https://youtube.com/dataprofessor>)")
+  
+# Generate empty lists for generated and past.
+## generated stores AI generated responses
+# generated IS THE CHATBOT response, past is the HUMAN response
+if "generated" not in st.session_state:
+  st.session_state["generated"] = ["Hi There! How can I help you?"]
+ if "past" not in st.session_state:
+  st.session_state["past"] = ["Hi!"]
   
   
