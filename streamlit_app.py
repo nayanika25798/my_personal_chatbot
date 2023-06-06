@@ -4,12 +4,11 @@ from streamlit_extras.colored_header import colored_header
 from streamlit_extras.add_vertical_space import add_vertical_space
 from hugchat import hugchat
 
+# Settingup the Main Title
 st.title('🎈 My Personal Chatbot <3')
-
-# st.write('Hello world!')
-
-#Set the title of the app
-# st.set_page_config(page_title = "My Personal Chatbot!")
+#setting up the sub title
+st.write('Speak your mind and heart!")
+# Setting up the Side-Bar
 
 with st.sidebar:
   #set the sidebar title
@@ -24,4 +23,6 @@ with st.sidebar:
     💡 Note: No API key required!
     ''')
   add_vertical_space(5)
-  st.write("Made with ❤️ by Nayanika, ref: (<https://youtube.com/dataprofessor>)")
+  st.write("Made with ❤️ by Nayanika (<https://youtube.com/dataprofessor>)")
+  
+  
